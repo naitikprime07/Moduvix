@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "small";
+    src: url("/assets/moduvix.com/font/AbrilFatface-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: small;
+}
+
+input {
+    outline: 0;
+    border: none
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+
+img {
+    width: 100%;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+.de_iv_adv {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.postionFixed {
+    width: 100%;
+    min-height: 60px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F8F8;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9999;
+}
+
+footer {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    background-color: #000000;
+    color: #fff;
+    font-size: 13px;
+    line-height: 1.5;
+    padding: 10px 0 10px 0;
+    margin-bottom: 60px;
+}
+
+footer a {
+    display: inline;
+    color: white;
+}
+
+body {
+    padding-top: calc(var(--header-heigth));
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.img-box {
+    position: relative;
+}
+
+.img-box::before {
+    content: '';
+    display: block;
+}
+
+.img-box>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+:root {
+    --all-width: 1480px;
+    --header-heigth: 160px;
+    --logo-width: 200px;
+    --button: 40px;
+    --page-title-size: 48px;
+    --page-content-size: 20px;
+    --search-box: 400px;
+}
+
+@media screen and (max-width:769px) {
+    :root {
+        --all-width: 100%;
+        --search-box: var(--all-width);
+        --page-title-size: 26px;
+        --page-content-size: 18px;
+    }
+
+    body {
+        padding-top: 0 !important;
+    }
+}

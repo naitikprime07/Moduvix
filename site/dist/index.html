@@ -1,0 +1,431 @@
+<!DOCTYPE html><html lang="en" style="overflow-y: auto;"><head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = 0">
+        <title>Moduvix</title>
+		
+        <meta name="keywords" content="technology">
+		
+		
+		
+		<script type="module" crossorigin src="/assets/index-B4xyPdcf.js"></script>
+		<link rel="stylesheet" crossorigin href="/assets/index-D4DCS1hj.css">
+	</head>
+	<body>
+        <header class="">
+            <div class="nav-top">
+                <div class="menu-btn open-menu img-box" style="opacity: 0; pointer-events: none;">
+                    <img src="data:image/png;base64,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" class="open-menu-btn" style="top: 0px;">
+                    <img src="data:image/png;base64,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EeGYxHwKCdBhxYVjmIZpuGlT7nkZ7/wKCdAhwpFjvoUEaDHhKGH+hQRokTgg7rknRuHITUiA4sWBUEo4/vqr7+GYTUiA4sQBIBxtISRAdrHhhaOthARoXGxw4egKIQEmLja0cHSVkABjFxtYOPqiuJAM0zANv/kmXggJtEJs2NLCsXlz7nnpi5kh2b077/NPQgJtEBtUOAhCApxSbMy77/5nlwoHMwgJMIdwsBhCAggHyyIk0EPCwTgJCfSAcDBJQgIdJBw0SUigA4SDnIQEWkg4KMnMkOzZk3c9plkhWbMm9/xAEYSDkgkJFEg4aBMhgQIIB20mJJDBzHCcOJF31wkHyyMk0ADhoMuEBCaguHCklFLasiX3vNBNQgJjEAv3rrti4QoH/SIksATCAf8jJLAAwgEnF/tj1apYl0ICVVUJByyGkEAlHLAcQkIvCQeMT3EhSSml9PXXMQoJYyIcMDkzQ/LOO3n314iQsEzCAc0REjpBOCAfIaGVhAPKISS0QiyIO++MUTigJEJCkWIBCAe0gZBQhHjg27bFWMrP49i0Kfe8QBvEvjnjjNg3772Xd/+OfPFFXM855+SeHyYkHvSVV04f3Fn5tuqwHLGPCgrJMA3T8LXXcs8LExJPeffuvKtMOGCcYl8VFJKUUkpXXZV7XhiTeKBnnTV9gGchHDBJsc9GIXn//bwBefrp3PPRtEHuC5is9etjXLmy2c97/HiVqlSlrVvrQT2oB3v25J4J6KK6ruu6/vPPqq7qqt6yJfbd3r15rubyy3PPR9M6HpDjx/N8vttuEw5oThkhafq8YWLiLe2KFfHW8ueffakK+iPPl7Z27Mh934xZPNhnn51YOFJK/h0HlKmZkBw7Fr//6EvmdEY84LVrY5yaEg7on5kh2bt3vAF58snc98eExcK5+up44IcOLW2h/PJLjDffnPt+gMWbDklKKaVdu5YXjueei3HQ8T9LZlqE5IIL4sE/80yMhw/Pv0B++il+/fPPe4sK3RH7u65jX99xR4yffRYfn/2dKv7+O8aPPvJnncwrFsb558dCWbNmtMByXxfQnNj3Z54Z58G6dfH69NNzXxcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtN9/AdhN67a5P8BjAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIyLTA4LTIyVDEzOjMzOjMzKzA4OjAwUDJieAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMi0wOC0yMlQxMzozMzozMyswODowMCFv2sQAAABJdEVYdHN2ZzpiYXNlLXVyaQBmaWxlOi8vL2hvbWUvYWRtaW4vaWNvbi1mb250L3RtcC9pY29uXzN6a2M2eDA5N3lpL2d1YW5iaS5zdmftA1yoAAAAAElFTkSuQmCC" class="off-menu-btn" style="top: var(--button);">
+                </div>
+                <h1 class="logo">
+                    <a href="/">
+                        <img src="/assets/CWsmG0RmGejBC004z3VNW2mHbnSuiMqW-D6w44NHM.png">
+                    </a>
+                </h1>
+                <div class="search-btn img-box">
+                    <img src="/assets/seach-B6qUufQ0.png" class="open-search-btn">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADIEAYAAAD9yHLdAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAAAAAAAA+UO7fwAAAAlwSFlzAAAASAAAAEgARslrPgAACddJREFUeNrt3cmPFdUewPGqawCHaMREA0oQh92LC6Nb47gwCKzQhXFB4kBcOeCwURP1D3BpRHdOiRpUcGEUE91ojG40cUAWoAvooIlDFJHIPW/x8/Z7PSA93FvnVNXnszm5HaSrTp1zvt4GuqsKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoSJ37AnJJKaWUNm6MV7ffHuMVV8RY/zMv+/bF+PrrMb7xRl3XdV0Ph7mvH1i+NEzDNFy/vqqruqq3b4+PXnNNjOedF+ORIzF+8EGVqlSlnTvrQT2oBz/+mPv6aUgEY/XqGN99Ny3Jp5/Gglu3Lvf9AEsX+/nee2M8dmxx58Bvv8U5sHVr7vtgwuJBr1oVD/7jj5cWjtkOHozxkkty3x+wcLFvn3hiPOfAiRNxvmzenPu+mJB40I88Mp4FM9sPP8R42WW57xM4udinjz46mXPgyJEIydln575Pxiwe8Ogdw6R4RwIlin35+OOT3f8j27blvl/GZPRnFc0snNkh2bAh9/1DnzUbjpTivNm5M/d9N22Q+wIm69xzm/18F18c44cfCgk0bxSOePXUU4194rqqq3r16tz337SOB2RqKsaUmv28QgJNincAjz0WrxoMxwyHDuWeB8YsDvDPP2/2S1mzHTggJDB+o3Dk3d8p+dtYHRUP9tZbc6+vICQwDsWEI6WU0pdfxjjo+Fd0eiwe8Asv5F5qQUhgKcoKx6+/xvif/+SeFyYsHvRpp8X44ou5l174/vsYL7009/xAyWKfTOrfcy3CMA3T8Pff48W11+aeFxoWD15IoA3iwH744dw7VDiYIRaCkECJhINWiIUhJFCCMsNx3XW554XCxUIREshBOOiEWDhCAk0QDjopFtIoJC+9lHt9h1FIfNNG2k046IVYWEIC4yAc9FIsNCGBpRAOqIQEFkM4YB6xEIUE5hMH9kMP5d4RwkHRYmEKCVSVcMCSxEIVEvpJOGAMYuEKCf0gHDABsZCFhG4SDmhALOzSQnLwYIxCwuIIB2QQC30Ukpdfzr3/gpCwMMWEI6WU0h9/xCgc9EwsfCGhHcoMx/XX554XyCo2gpBQplgHO3bkXpFBOGBesTGEhDLEcxcOaJXYKEJCHvGchQNaLTaOkNCMeK7CAZ0SG0lImIx4jsIBnRYbq9SQbNiQe35YnHhuwgG9EhtNSFiaeE7CAb0WG28UkldeyX0UBCEpVTwX4QD+T2xEIWF+8RyEA/gXsTGFhBDz/uCDuVdAEA5ohdioQtJXMc/CASxDbFwh6YuYV+EAxig2spB0VcxjaeG44Ybc8wKMUWxsIemKmDfhABoUG720kBw4EKOQnErMk3AAGcXGF5K2iHkRDqAgcRCMQvLqq7mPpiAkM5+PcAAFi4NBSEoR9y0cQIvEQSEkeef/gQdyz3gQDmAJ4uAQkmbnWziADomDpLSQ7N+fhmmYhuvW5Z6f8cyvcAAdFgeLkIx3PoUD6JE4sFesiANn167cR1/Yvz/Giy7KPT+nnL+UknAAvVZmSL77LsbyQhLXJRwA04TkFPOTUhIOgH8hJLPmI6UkHACL0PeQxOe5//7cdxxG4bjxxtzrAmDB+haS+H2FA2Bsuh6S+H2EA2BiuhaS+O+EA6AxM0Py5pu5j96w8JDErxMOgGzaFpL4uHAAFKP0kMQoHADFipCsXBkH5Ftv5T6qw9RU7isIwgFwSmW+I8lFOAAWrd8hOXpUOACWqV8hOXo07vemm3LPO0BndDskwgEwcd0KiXAANK7dIREOgOxm/vXf0kMiHADFKTskwkG3DXJfACxHPagH9eD48Xj1ySe5r2daqlKVDh+u6qqu6q++yn05AMwS/6dfyk8APJl9+2K88MLc8wXQe3Egl/K9qoQEoHjtDIeQAGTTjXAICUBjuhkOIQGYmH6EQ0gAxqaf4ZhNSAAWLA7MvodjNiEBOKk4IEsJx+jncWzcGGMp/7L9229jFBKAwsJx7FiMt9wyfX1FfosUIQF6LA7AcsMx53qL/JntQgL0SBx4o3AMh3kP4FOHY871CwlAs+KAa2845tyPkABMVhxo3QnHnPsTEoDxigOsu+GYc79CArA8cWDdd1+M3Q/HnPsXEoDFiYNz+/Y4qPoXjvnnQ0gATko4FjI/QgIwTTiWMl+jkLz9dt75GhmFZO3a3PMD9IBwjGP+hAToEeGYxHwKCdBhxYVjmIZpuGlT7nkZ7/wKCdAhwpFjvoUEaDHhKGH+hQRokTgg7rknRuHITUiA4sWBUEo4/vqr7+GYTUiA4sQBIBxtISRAdrHhhaOthARoXGxw4egKIQEmLja0cHSVkABjFxtYOPqiuJAM0zANv/kmXggJtEJs2NLCsXlz7nnpi5kh2b077/NPQgJtEBtUOAhCApxSbMy77/5nlwoHMwgJMIdwsBhCAggHyyIk0EPCwTgJCfSAcDBJQgIdJBw0SUigA4SDnIQEWkg4KMnMkOzZk3c9plkhWbMm9/xAEYSDkgkJFEg4aBMhgQIIB20mJJDBzHCcOJF31wkHyyMk0ADhoMuEBCaguHCklFLasiX3vNBNQgJjEAv3rrti4QoH/SIksATCAf8jJLAAwgEnF/tj1apYl0ICVVUJByyGkEAlHLAcQkIvCQeMT3EhSSml9PXXMQoJYyIcMDkzQ/LOO3n314iQsEzCAc0REjpBOCAfIaGVhAPKISS0QiyIO++MUTigJEJCkWIBCAe0gZBQhHjg27bFWMrP49i0Kfe8QBvEvjnjjNg3772Xd/+OfPFFXM855+SeHyYkHvSVV04f3Fn5tuqwHLGPCgrJMA3T8LXXcs8LExJPeffuvKtMOGCcYl8VFJKUUkpXXZV7XhiTeKBnnTV9gGchHDBJsc9GIXn//bwBefrp3PPRtEHuC5is9etjXLmy2c97/HiVqlSlrVvrQT2oB3v25J4J6KK6ruu6/vPPqq7qqt6yJfbd3r15rubyy3PPR9M6HpDjx/N8vttuEw5oThkhafq8YWLiLe2KFfHW8ueffakK+iPPl7Z27Mh934xZPNhnn51YOFJK/h0HlKmZkBw7Fr//6EvmdEY84LVrY5yaEg7on5kh2bt3vAF58snc98eExcK5+up44IcOLW2h/PJLjDffnPt+gMWbDklKKaVdu5YXjueei3HQ8T9LZlqE5IIL4sE/80yMhw/Pv0B++il+/fPPe4sK3RH7u65jX99xR4yffRYfn/2dKv7+O8aPPvJnncwrFsb558dCWbNmtMByXxfQnNj3Z54Z58G6dfH69NNzXxcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtN9/AdhN67a5P8BjAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIyLTA4LTIyVDEzOjMzOjMzKzA4OjAwUDJieAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMi0wOC0yMlQxMzozMzozMyswODowMCFv2sQAAABJdEVYdHN2ZzpiYXNlLXVyaQBmaWxlOi8vL2hvbWUvYWRtaW4vaWNvbi1mb250L3RtcC9pY29uXzN6a2M2eDA5N3lpL2d1YW5iaS5zdmftA1yoAAAAAElFTkSuQmCC" class="off-search-btn">
+                </div>
+                <ul class="menu-box" style="display: none;">
+                    <ul class="menu-open">
+                        
+                    <li><a href="#list0">AI Tools</a></li>
+                    <li><a href="#list1">Digital Skills</a></li>
+                    <li><a href="#list2">Future Trend</a></li>
+                    </ul>
+                    <div class="float">
+
+                    </div>
+                </ul>
+                <div class="search-box">
+                    <form class="search" action="#" onsubmit="return false">
+                        <input type="text" id="search" placeholder="Search">
+                        <button id="go">
+                GO!
+                        </button>
+                        <div id="clear"></div>
+                        <div class="bor-top"></div>
+                    </form>
+                </div>
+            </div>
+            <div class="nav-bot">
+                <ul class="menu">
+                    
+                    <li><a href="#list0">AI Tools</a></li>
+                    <li><a href="#list1">Digital Skills</a></li>
+                    <li><a href="#list2">Future Trend</a></li>
+                </ul>
+            </div>
+        </header>
+
+
+        
+        <section>
+                    <div class="ban-lef">
+                        <a href="/digital/how-ai-is-transforming-historical-and-cultural-reconstruction.html" class="lef-box">
+                                        <div class="ban-img img-box">
+                                            <img src="/assets/KfyR2PS5hXcovSH1dJ94VQBoVMKol8p1-CcXW70f_.jpg" class="lazy">
+                                        </div>
+                                        <div class="txt-box">
+                                            <div class="type">
+                                                Reconstruction
+                                            </div>
+                                            <h2 class="lef-h2">
+                                                How AI Is Transforming Historical and Cultural Reconstruction?
+                                            </h2>
+                                        </div>
+                                    </a><a href="/digital/the-core-skills-shaping-careers-in-2026.html" class="lef-box">
+                                        <div class="ban-img img-box">
+                                            <img src="/assets/IJSDWmL9UWy4g4Q4DbjKi6HQGRooTOa6--r4rRMSW.jpg" class="lazy">
+                                        </div>
+                                        <div class="txt-box">
+                                            <div class="type">
+                                                Careers
+                                            </div>
+                                            <h2 class="lef-h2">
+                                                The Core Skills Shaping Careers in 2026
+                                            </h2>
+                                        </div>
+                                    </a>
+                    </div>
+                    <div class="ban-cen">
+                        <a href="/digital/creative-workflows-reimagined-in-a-connected-digital-economy.html" class="cen-top">
+                                        <div class="ban-img img-box">
+                                            <img src="/assets/2tirZv1kSarhTM4UZUxHEPHEubYxFWUK-CczAHeOR.jpg" class="lazy">
+                                        </div>
+                                        <div class="txt-box">
+                                            <div class="type">
+                                                
+                                            </div>
+                                            <h2 class="cen-h2">
+                                                Creative Workflows Reimagined in a Connected Digital Economy
+                                            </h2>
+                                        </div>
+                                    </a>
+                        <a href="/digital/the-new-frontier-of-language-in-aimultilingual-ai-toolkits-and-their-global-impact.html" class="cen-bot">
+                                        <div class="txt-box">
+                                            <div class="type">
+                                                Language
+                                            </div>
+                                            <h2 class="cen-h2">
+                                                The New Frontier of Language in AI-Multilingual AI Toolkits and Their Global Impact
+                                            </h2>
+                                        </div>
+                                        <div class="ban-img img-box">
+                                            <img src="/assets/2L5MinW7QfYxW9hP2235wfBr2xD8jI1D-CNlv835q.jpg" class="lazy">
+                                        </div>
+                                    </a>
+                    </div>
+                </section>
+        
+        <main>
+                        <div class="list" id="list0">
+                            <h3>AI Tools</h3>
+                            <div class="big-box">
+                                <a href="/digital/how-generative-media-tools-are-reshaping-artistic-practice.html" class="one-lef">
+                                                <div class="one-img img-box">
+                                                    <img class="lazy" src="/assets/0LSxrTPwSt9roytLWOunniqIVCqE2fHe-C2UZKnsY.jpg">
+                                                </div>
+                                                <div class="one-lef-txt">
+                                                    <div class="type">
+                                                        Artistic Practice
+                                                    </div>
+                                                    <div class="name">
+                                                        How Generative Media Tools Are Reshaping Artistic Practice?
+                                                    </div>
+                                                    <div class="one-lef-text">
+                                                        The intersection of generative artificial intelligence (AI) and creative expression marks one of the most profound shifts in the cultural landscape of the early 21st century.
+                                                    </div>
+                                                </div>
+                                            </a>
+                                <div class="one-rig">
+                                    <a href="/digital/how-ai-literature-assistants-are-transforming-research-workflows.html" class="one-rig-box">
+                                                <div class="one-rig-lef">
+                                                    <div class="type">
+                                                        Literature Assistants
+                                                    </div>
+                                                    <div class="name">
+                                                       How AI Literature Assistants Are Transforming Research Workflows?
+                                                    </div>
+                                                    <div class="one-rig-txt">
+                                                       The exponential growth in scientific publications has created an environment where researchers are inundated with more content than they can feasibly read manually.
+                                                    </div>
+                                                </div>
+                                                <div class="one-rig-img img-box">
+                                                     <img class="lazy" src="/assets/cvlHzGqlvyB7IBVxKi3psQRqci05WLm3-CL_XcHZu.jpg">
+                                                </div>
+                                            </a><a href="/digital/the-rise-of-predictive-ai-that-understands-needs-before-theyre-voiced.html" class="one-rig-box">
+                                                <div class="one-rig-lef">
+                                                    <div class="type">
+                                                        Predictive AI
+                                                    </div>
+                                                    <div class="name">
+                                                       The Rise of Predictive AI That Understands Needs Before They’re Voiced
+                                                    </div>
+                                                    <div class="one-rig-txt">
+                                                       In the evolving landscape of digital interaction, artificial intelligence is no longer confined to executing commands after they’re issued.
+                                                    </div>
+                                                </div>
+                                                <div class="one-rig-img img-box">
+                                                     <img class="lazy" src="/assets/I2DXiT7A32EGsM9Dr30h6TH6eImOKbyd-Cmv_Jf7a.jpg">
+                                                </div>
+                                            </a><a href="/digital/when-artificial-intelligence-breaks-trust-misinformation-and-media-backlash-in-the-real-world.html" class="one-rig-box">
+                                                <div class="one-rig-lef">
+                                                    <div class="type">
+                                                        Trust
+                                                    </div>
+                                                    <div class="name">
+                                                       When Artificial Intelligence Breaks Trust: Misinformation and Media Backlash in the Real World
+                                                    </div>
+                                                    <div class="one-rig-txt">
+                                                       In recent years, artificial intelligence has transitioned from a niche technological curiosity to a pervasive force shaping media, advertising, and public discourse.
+                                                    </div>
+                                                </div>
+                                                <div class="one-rig-img img-box">
+                                                     <img class="lazy" src="/assets/LpBOplezjRMFdwZCoqvKs5IBi3Y5vo6b-B491ewYf.jpg">
+                                                </div>
+                                            </a>
+                                </div>
+                            </div>
+                        </div><div class="list" id="list1">
+                            <h3>Digital Skills</h3>
+                            <div class="big-box" data-type="two">
+                                <a href="/digital/ethical-ai-toolkits-and-the-global-shift-toward-privacy-and-data-sovereignty.html" class="two-box">
+                                            <div class="two-img img-box">
+                                                <img class="lazy" src="/assets/V5IzygUjznsCPla1dV2vmyweXsMO7uwA-DMv0K1_H.jpg">
+                                            </div>
+                                            <div class="type">
+                                                Privacy
+                                            </div>
+                                            <div class="text">
+                                                Ethical AI Toolkits and the Global Shift Toward Privacy and Data Sovereignty
+                                            </div>
+                                        </a><a href="/digital/the-digital-skills-employers-are-prioritizing-in-todays-job-market.html" class="two-box">
+                                            <div class="two-img img-box">
+                                                <img class="lazy" src="/assets/LunALFZV0ARbItCRtqLFqg3c7rKy1LY7-DCQHfgsW.jpg">
+                                            </div>
+                                            <div class="type">
+                                                Employer
+                                            </div>
+                                            <div class="text">
+                                                The Digital Skills Employers Are Prioritizing in Today’s Job Market
+                                            </div>
+                                        </a><a href="/digital/transform-your-abilities-with-a-30-day-digital-skills-challenge.html" class="two-box">
+                                            <div class="two-img img-box">
+                                                <img class="lazy" src="/assets/6L5hqno4zWztZEVIfYTB5tngRRg7QVfV-DgMkLrvD.jpg">
+                                            </div>
+                                            <div class="type">
+                                                Ability
+                                            </div>
+                                            <div class="text">
+                                                Transform Your Abilities with a 30 Day Digital Skills Challenge
+                                            </div>
+                                        </a><a href="/digital/a-practical-roadmap-for-building-essential-digital-skills-from-beginner-to-advanced.html" class="two-box">
+                                            <div class="two-img img-box">
+                                                <img class="lazy" src="/assets/DPMl5LD5vA7g0qvcWRTlqYOAkUDBeHYt-C0KFsLcB.jpg">
+                                            </div>
+                                            <div class="type">
+                                                Beginner
+                                            </div>
+                                            <div class="text">
+                                                A Practical Roadmap for Building Essential Digital Skills from Beginner to Advanced
+                                            </div>
+                                        </a><a href="/digital/how-to-build-a-digital-skills-portfolio-that-gets-you-noticed.html" class="two-box">
+                                            <div class="two-img img-box">
+                                                <img class="lazy" src="/assets/sNHUZG1HINXw4ep8dUZT0qJhRtokc6t1-BN50-dZA.jpg">
+                                            </div>
+                                            <div class="type">
+                                                Portfolio
+                                            </div>
+                                            <div class="text">
+                                                How to Build a Digital Skills Portfolio That Gets You Noticed?
+                                            </div>
+                                        </a><a href="/digital/the-entrepreneurs-digital-playbook-for-scalable-business-growth.html" class="two-box">
+                                            <div class="two-img img-box">
+                                                <img class="lazy" src="/assets/0Wpi1LJPPVP1vQ5vrv1tDHezCl0zIt9m-MKPkLx1f.jpg">
+                                            </div>
+                                            <div class="type">
+                                                Entrepreneur
+                                            </div>
+                                            <div class="text">
+                                                The Entrepreneur’s Digital Playbook for Scalable Business Growth
+                                            </div>
+                                        </a><a href="/digital/why-digital-skills-are-central-to-global-workforce-success.html" class="two-box">
+                                            <div class="two-img img-box">
+                                                <img class="lazy" src="/assets/qOITVQGH8vGG37LPfh1CUHsirVtuFA5u-Dkj8Lv3d.jpg">
+                                            </div>
+                                            <div class="type">
+                                                Global
+                                            </div>
+                                            <div class="text">
+                                                Why Digital Skills Are Central to Global Workforce Success?
+                                            </div>
+                                        </a><a href="/digital/how-every-generation-can-thrive-with-digital-skills.html" class="two-box">
+                                            <div class="two-img img-box">
+                                                <img class="lazy" src="/assets/SheN9lfwOwtAWqL6ziGXf7QUzXfsaMJV-DHx3527A.jpg">
+                                            </div>
+                                            <div class="type">
+                                                Generation
+                                            </div>
+                                            <div class="text">
+                                                How Every Generation Can Thrive With Digital Skills？
+                                            </div>
+                                        </a>
+                            </div>
+                        </div><div class="list" id="list2">
+                            <h3>Future Trend</h3>
+                            <div class="big-box" data-type="three">
+                                <ul>
+                                    <li>
+                                            <a href="/digital/accelerating-concept-validation-with-ai-in-modern-product-development.html" class="three-box">
+                                                <div class="three-img img-box">
+                                                    <img class="lazy" src="/assets/y5zaxbfrPZN64aqD1GBxVHK77xDvWfvH-B7RcyVsh.jpg">
+                                                </div>
+                                                <div class="three-txt">
+                                                    <div class="type">
+                                                        Concept Validation
+                                                    </div>
+                                                    <div class="name">
+                                                         Accelerating Concept Validation with AI in Modern Product Development
+                                                    </div>
+                                                    <div class="text">
+                                                        In today’s fast-paced business environment, the ability to rapidly test and validate product concepts is indispensable.
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li><li>
+                                            <a href="/digital/artificial-intelligence-and-the-reinvention-of-market-research-workflows.html" class="three-box">
+                                                <div class="three-img img-box">
+                                                    <img class="lazy" src="/assets/rfayiZH5NADAE5LzZJCVSQMPcGJtBzLm-B7TNxzX-.jpg">
+                                                </div>
+                                                <div class="three-txt">
+                                                    <div class="type">
+                                                        Market Research
+                                                    </div>
+                                                    <div class="name">
+                                                         Artificial Intelligence and the Reinvention of Market Research Workflows
+                                                    </div>
+                                                    <div class="text">
+                                                        Market research has long been a domain defined by surveys, focus groups, interviews, and the painstaking collection and analysis of data from real human participants.
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li><li>
+                                            <a href="/digital/ai-as-a-catalyst-for-inclusive-communication-and-learning.html" class="three-box">
+                                                <div class="three-img img-box">
+                                                    <img class="lazy" src="/assets/nWMZpkOXWBPELGL6tBLMy33vgAEKW3GK-D1WYO0sA.jpg">
+                                                </div>
+                                                <div class="three-txt">
+                                                    <div class="type">
+                                                        Communication and Learning
+                                                    </div>
+                                                    <div class="name">
+                                                         AI as a Catalyst for Inclusive Communication and Learning
+                                                    </div>
+                                                    <div class="text">
+                                                        Artificial intelligence (AI) is rapidly transforming how individuals access information, communicate across languages, engage in learning, and participate in social and economic life.
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li><li>
+                                            <a href="/digital/digital-architecture-and-the-flow-of-conversation-in-aienhanced-online-communities.html" class="three-box">
+                                                <div class="three-img img-box">
+                                                    <img class="lazy" src="/assets/Q1sZhu8R8YcFau30kYgaNkEcCn4RpdiB-DPjviHjH.jpg">
+                                                </div>
+                                                <div class="three-txt">
+                                                    <div class="type">
+                                                        Online Communities
+                                                    </div>
+                                                    <div class="name">
+                                                         Digital Architecture and the Flow of Conversation in AI-Enhanced Online Communities
+                                                    </div>
+                                                    <div class="text">
+                                                        At its most fundamental level, AI influences the structure of online discourse through algorithmic curation and content recommendation systems.
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li><li>
+                                            <a href="/digital/creative-workflows-reimagined-in-a-connected-digital-economy.html" class="three-box">
+                                                <div class="three-img img-box">
+                                                    <img class="lazy" src="data:image/gif;base64,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" data-src="/assets/moduvix.com/images/index/V04TH3UEfVvDZ6tekDKpteKd36Kdpm6X.jpg">
+                                                </div>
+                                                <div class="three-txt">
+                                                    <div class="type">
+                                                        
+                                                    </div>
+                                                    <div class="name">
+                                                         Creative Workflows Reimagined in a Connected Digital Economy
+                                                    </div>
+                                                    <div class="text">
+                                                        In the contemporary landscape of creative work, digital tools have become indispensable assets for professionals and freelancers alike.
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li><li>
+                                            <a href="/digital/the-core-skills-shaping-careers-in-2026.html" class="three-box">
+                                                <div class="three-img img-box">
+                                                    <img class="lazy" src="data:image/gif;base64,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" data-src="/assets/moduvix.com/images/index/299GgDu4i4qBX96zEUsWQbOXoLD0oT37.jpg">
+                                                </div>
+                                                <div class="three-txt">
+                                                    <div class="type">
+                                                        Careers
+                                                    </div>
+                                                    <div class="name">
+                                                         The Core Skills Shaping Careers in 2026
+                                                    </div>
+                                                    <div class="text">
+                                                        As we approach 2026, the landscape of work continues to transform faster than many professionals initially anticipated.
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li><li>
+                                            <a href="/digital/the-new-frontier-of-language-in-aimultilingual-ai-toolkits-and-their-global-impact.html" class="three-box">
+                                                <div class="three-img img-box">
+                                                    <img class="lazy" src="data:image/gif;base64,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" data-src="/assets/moduvix.com/images/index/mlqmCEgy5ljKykTwzISqYMlViWJs7Hss.jpg">
+                                                </div>
+                                                <div class="three-txt">
+                                                    <div class="type">
+                                                        Language
+                                                    </div>
+                                                    <div class="name">
+                                                         The New Frontier of Language in AI-Multilingual AI Toolkits and Their Global Impact
+                                                    </div>
+                                                    <div class="text">
+                                                        Artificial intelligence has traditionally been shaped by the predominance of English in both training data and foundational research, a pattern that has shaped how language dominance manifests online and in AI applications.
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li><li>
+                                            <a href="/digital/how-ai-is-transforming-historical-and-cultural-reconstruction.html" class="three-box">
+                                                <div class="three-img img-box">
+                                                    <img class="lazy" src="data:image/gif;base64,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" data-src="/assets/moduvix.com/images/index/9qDykdKaRhKvtTVSi6EARAMDPdhRI8Qe.jpg">
+                                                </div>
+                                                <div class="three-txt">
+                                                    <div class="type">
+                                                        Reconstruction
+                                                    </div>
+                                                    <div class="name">
+                                                         How AI Is Transforming Historical and Cultural Reconstruction?
+                                                    </div>
+                                                    <div class="text">
+                                                        Artificial intelligence (AI) is rapidly reshaping how researchers, historians, and cultural institutions approach the reconstruction of lost languages, artifacts, and heritage sites.
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                </ul>
+                            </div>
+                        </div>
+                   </main>
+        <footer class="footer">
+            <div>©2025 moduvix.com All Rights Reserved</div>
+            <div class="about">
+                <a href="/privacy.html">Privacy Policy</a>
+                <a href="/terms.html">Terms of Service</a>
+            </div>
+        </footer>
+	    
+	
+	
+	
+</body></html>

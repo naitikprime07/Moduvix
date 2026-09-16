@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find assets/modutrix.com/css -name \"*.css\" -exec wc -l {} ;)",
+      "Bash(md5sum base__b345a51b.css base__c6529629.css header__b345a51b.css header__c6529629.css banner__c6529629.css)",
+      "Bash(rm braft-editor/index__b345a51b.css)",
+      "Bash(mv base__b345a51b.css base.css)",
+      "Bash(mv header__b345a51b.css header.css)",
+      "Bash(mv banner__c6529629.css banner.css)",
+      "Bash(mv list__c6529629.css list.css)",
+      "Bash(mv page__b345a51b.css page.css)",
+      "Bash(mv braft-editor/index.css braft-editor.css)",
+      "Bash(rm -rf braft-editor)",
+      "Bash(rm base__c6529629.css header__c6529629.css)",
+      "Bash(find . -name \"*.html\" -type f -exec sed -i 's|/assets/modutrix\\.com/css/braft-editor/index__b345a51b\\.css|/assets/modutrix.com/css/braft-editor.css|g; s|/assets/modutrix\\.com/css/braft-editor/index\\.css|/assets/modutrix.com/css/braft-editor.css|g; s|/assets/modutrix\\.com/css/base__b345a51b\\.css|/assets/modutrix.com/css/base.css|g; s|/assets/modutrix\\.com/css/base__c6529629\\.css|/assets/modutrix.com/css/base.css|g; s|/assets/modutrix\\.com/css/header__b345a51b\\.css|/assets/modutrix.com/css/header.css|g; s|/assets/modutrix\\.com/css/header__c6529629\\.css|/assets/modutrix.com/css/header.css|g; s|/assets/modutrix\\.com/css/banner__c6529629\\.css|/assets/modutrix.com/css/banner.css|g; s|/assets/modutrix\\.com/css/list__c6529629\\.css|/assets/modutrix.com/css/list.css|g; s|/assets/modutrix\\.com/css/page__b345a51b\\.css|/assets/modutrix.com/css/page.css|g' {} ;)",
+      "Bash(rm -rf _raw _reports _screenshots)",
+      "Bash(npm install)",
+      "Bash(npm run build)",
+      "Bash(dir /b site)",
+      "Bash(dir /b)",
+      "Bash(mv modutrix.com moduvix.com)",
+      "Bash(mv assets/modutrix.com assets/moduvix.com)",
+      "Bash(cp -r site/assets/modutrix.com site/assets/moduvix.com)",
+      "Bash(find site -name \"*.html\" -type f ! -path \"*/node_modules/*\" ! -path \"*/dist/*\" -exec sed -i 's|/assets/modutrix\\.com/|/assets/moduvix.com/|g' {} ;)",
+      "Bash(find . -name \"*.html\" -type f -exec sed -i 's|©2025 modutrix\\.com All Rights Reserved|©2025 moduvix.com All Rights Reserved|g' {} ;)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

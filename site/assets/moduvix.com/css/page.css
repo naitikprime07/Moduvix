@@ -1,0 +1,173 @@
+main {
+    width: var(--all-width);
+    margin: 20px auto;
+}
+
+.type {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 15px 0;
+}
+
+.title {
+    font-size: var(--page-title-size);
+    width: 100%;
+    font-family: "";
+}
+
+.xian {
+    margin: 30px 0;
+    width: 8%;
+    height: 2px;
+    background-color: red;
+    border-radius: 1px;
+}
+
+.sm-title {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.cont-box {
+    display: flex;
+}
+
+.cont-lef {
+    width: 70%;
+    padding-right: 3%;
+}
+
+.page-img-box {
+    width: 100%;
+    position: relative;
+}
+
+.page-img-box::before {
+    content: '';
+    display: block;
+    padding-top: 50%;
+    position: relative;
+}
+
+.p-box {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.p-box h5 {
+    width: 100%;
+    font-size: 26px;
+}
+
+.cont-lef p {
+    font-size: var(--page-content-size);
+    line-height: calc((var(--page-content-size) * 2)*0.8);
+    margin: 20px 0;
+    font-family: '';
+    font-weight: 300;
+}
+
+.cont-lef p span {
+    font-family: '' !important;
+}
+
+.cont-rig {
+    width: 30%;
+    position: sticky;
+    top: var(--header-heigth);
+    margin-bottom: auto;
+}
+
+.cont-rig h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #66666650;
+    padding-bottom: 10px;
+}
+
+.cont-rig-box {
+    display: flex;
+    border-bottom: 1px solid #66666650;
+    padding: 15px 0;
+}
+
+.rig-box-img {
+    width: 45%;
+    position: relative;
+}
+
+.rig-box-txt {
+    flex: 1;
+    padding-right: 2%;
+}
+
+.rig-box-img::before {
+    content: '';
+    position: relative;
+    display: block;
+    padding-top: 60%;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: 700;
+    width: 100%;
+}
+
+.rig-box-txt .type {
+    display: inline-block;
+    padding: 4px 10px;
+    color: #fff;
+    background-color: #000;
+    margin-top: 10%;
+}
+
+@media (max-width:799px) {
+    main {
+        padding: 0 8px;
+    }
+
+    .cont-box {
+        flex-direction: column;
+    }
+
+    .cont-lef,
+    .cont-rig {
+        width: 100%;
+        padding: 0;
+    }
+
+    .p-box {
+        width: 96%;
+    }
+
+    .title {
+        -webkit-line-clamp: 4;
+    }
+
+    .sm-title {
+        -webkit-line-clamp: 2;
+    }
+
+    .cont-rig {
+        width: 96%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .rig-box-txt .type {
+        padding: 3px 6px;
+        font-size: 12px;
+    }
+}
