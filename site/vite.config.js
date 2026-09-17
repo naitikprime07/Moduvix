@@ -25,5 +25,6 @@ export default defineConfig({
     rollupOptions: {
       input
     }
-  }
+  },
+  publicDir: 'public'
 });
